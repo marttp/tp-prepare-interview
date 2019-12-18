@@ -7,8 +7,6 @@ package com.training.sort;
  * Splitting is logical. not create new array
  */
 public class MergeSort extends Sort {
-
-    private int[] array;
     public MergeSort(int[] array) {
         this.array = array;
     }
@@ -23,7 +21,7 @@ public class MergeSort extends Sort {
         // if element more than one just break the function
         if (end - start >= 2) {
             // find mid index for splitting array
-            int midIndex = (int)(start + end)/2;
+            int midIndex = (int) (start + end) / 2;
             mergeSort(start, midIndex);
             mergeSort(midIndex, end);
             merge(start, midIndex, end);
@@ -37,7 +35,7 @@ public class MergeSort extends Sort {
             int j = mid;
             int tempIndex = 0;
             int[] temp = new int[end - start];
-            while(i < mid && j < end) {
+            while (i < mid && j < end) {
                 temp[tempIndex++] = this.array[i] <= this.array[j] ? this.array[i++] : this.array[j++];
             }
             System.arraycopy(this.array, i, this.array, start + tempIndex, mid - i);

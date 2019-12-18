@@ -4,13 +4,13 @@ public abstract class Sort {
 
     int[] array;
 
-    void swap(int[] array, int i, int j) {
+    void swap(int i, int j) {
         if (i == j) {
             return;
         }
-        int tmp = array[i];
-        array[i] = array[j];
-        array[j] = tmp;
+        int tmp = this.array[i];
+        this.array[i] = this.array[j];
+        this.array[j] = tmp;
     }
 
     public abstract void sort();

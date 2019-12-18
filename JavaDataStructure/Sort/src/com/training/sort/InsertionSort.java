@@ -1,8 +1,6 @@
 package com.training.sort;
 
 public class InsertionSort extends Sort {
-
-    private int[] array;
     public InsertionSort(int[] array) {
         this.array = array;
     }

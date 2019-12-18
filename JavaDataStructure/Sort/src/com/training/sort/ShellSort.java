@@ -1,6 +1,6 @@
 package com.training.sort;
 
-public class ShellSort extends  Sort {
+public class ShellSort extends Sort {
 
     public ShellSort(int[] array) {
         this.array = array;

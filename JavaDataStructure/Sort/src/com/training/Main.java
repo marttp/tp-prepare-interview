@@ -17,7 +17,8 @@ public class Main {
 //        sort = new SelectionSort(intArray);
 //        sort = new InsertionSort(intArray);
 //        sort = new ShellSort(intArray);
-        sort = new MergeSort(intArray);
+//        sort = new MergeSort(intArray);
+        sort = new QuickSort(intArray);
         sort.sort();
         System.out.println(Arrays.toString(intArray));
 //        int factorialResult = Factorial.factorial(5);

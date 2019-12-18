@@ -1,9 +1,6 @@
 package com.training.sort;
 
 public class BubbleSort extends Sort {
-
-    private int[] array;
-
     public BubbleSort(int[] array) {
         this.array = array;
     }
@@ -14,7 +11,7 @@ public class BubbleSort extends Sort {
         for (int i = this.array.length - 1; i > 0; i--) {
             for (int j = 0; j < i; j++) {
                 if (this.array[j] > this.array[j + 1]) {
-                    swap(this.array, j, j + 1);
+                    swap(j, j + 1);
                 }
             }
         }

@@ -1,7 +1,6 @@
 package com.training.sort;
 
 public class SelectionSort extends Sort {
-
     public SelectionSort(int[] array) {
         this.array = array;
     }
@@ -11,12 +10,12 @@ public class SelectionSort extends Sort {
     public void sort() {
         for (int i = 0; i < this.array.length; i++) {
             int minIndexEachRound = i;
-            for (int j = i+1; j < this.array.length; j++) {
+            for (int j = i + 1; j < this.array.length; j++) {
                 if (this.array[minIndexEachRound] > this.array[j]) {
                     minIndexEachRound = j;
                 }
             }
-            swap(this.array, i, minIndexEachRound);
+            swap(i, minIndexEachRound);
         }
     }
 }
