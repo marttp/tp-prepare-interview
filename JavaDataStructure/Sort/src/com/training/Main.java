@@ -22,9 +22,9 @@ public class Main {
         Sort sort;
 //        sort = new BubbleSort(intArray);
 //        sort = new SelectionSort(intArray);
-//        sort = new InsertionSort(intArray);
+        sort = new InsertionSort(intArray);
 //        sort = new ShellSort(intArray);
-        sort = new MergeSort(intArray);
+//        sort = new MergeSort(intArray);
 //        sort = new QuickSort(intArray);
 //        sort = new CountingSort(intArray);
 //        sort = new RadixSort(intArray);
