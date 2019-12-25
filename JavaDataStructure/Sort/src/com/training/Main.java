@@ -14,16 +14,17 @@ public class Main {
     private static void sortingTopic() {
         int[] intArray = new int[10];
         for (int i = 0; i < intArray.length; i++) {
-//            intArray[i] = (int)(Math.random() * 10);
+            // Using on counting sort
+            // intArray[i] = (int)(Math.random() * 10);
             intArray[i] = (int) (Math.random() * 10000);
         }
 
         Sort sort;
-        sort = new BubbleSort(intArray);
+//        sort = new BubbleSort(intArray);
 //        sort = new SelectionSort(intArray);
 //        sort = new InsertionSort(intArray);
 //        sort = new ShellSort(intArray);
-//        sort = new MergeSort(intArray);
+        sort = new MergeSort(intArray);
 //        sort = new QuickSort(intArray);
 //        sort = new CountingSort(intArray);
 //        sort = new RadixSort(intArray);
