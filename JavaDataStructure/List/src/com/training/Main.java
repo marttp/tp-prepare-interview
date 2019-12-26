@@ -1,6 +1,7 @@
 package com.training;
 
 import com.training.doublylinkedlist.EmployeeDoublyLinkedList;
+import com.training.integerlinkedlist.IntegerLinkedList;
 import com.training.singlylinkedlist.EmployeeLinkedList;
 
 public class Main {
@@ -9,6 +10,7 @@ public class Main {
 //        DemoList.runList();
 //        runSinglyLinkedList();
 //        runDoublyLinkedList();
+        runIntegerLinkedList();
     }
 
     private static void runSinglyLinkedList() {
@@ -61,5 +63,17 @@ public class Main {
         list.removeFromEnd();
         list.printList();
         System.out.println(list.getSize());
+    }
+
+    private static void runIntegerLinkedList() {
+        IntegerLinkedList list = new IntegerLinkedList();
+        list.insertSorted(3);
+        list.printList();
+        list.insertSorted(2);
+        list.printList();
+        list.insertSorted(1);
+        list.printList();
+        list.insertSorted(4);
+        list.printList();
     }
 }
