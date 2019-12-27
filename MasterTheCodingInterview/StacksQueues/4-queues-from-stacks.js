@@ -1,4 +1,4 @@
-class CrazyQueue {
+class QueueFromStack {
   constructor() {
     this.first = [];
     this.last = [];
@@ -21,6 +21,7 @@ class CrazyQueue {
     this.first.pop();
     return this;
   }
+
   peek() {
     if (this.last.length > 0) {
       return this.last[0];
@@ -29,13 +30,13 @@ class CrazyQueue {
   }
 }
 
-const myQueue = new CrazyQueue();
-myQueue.peek();
-myQueue.enqueue('Joy');
-myQueue.enqueue('Matt');
-myQueue.enqueue('Pavel');
-myQueue.peek();
-myQueue.dequeue();
-myQueue.dequeue();
-myQueue.dequeue();
-myQueue.peek();
+const myQueue = new QueueFromStack();
+console.log(myQueue.peek())
+console.log(myQueue.enqueue('Joy'))
+console.log(myQueue.enqueue('Matt'))
+console.log(myQueue.enqueue('Pavel'))
+console.log(myQueue.peek())
+console.log(myQueue.dequeue())
+console.log(myQueue.dequeue())
+console.log(myQueue.dequeue())
+console.log(myQueue.peek())
