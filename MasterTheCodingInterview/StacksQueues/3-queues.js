@@ -30,9 +30,11 @@ class Queue {
     if (!this.first) {
       return null;
     }
+    // Make Last to NULL first
     if (this.first === this.last) {
       this.last = null;
     }
+    // Then make First to NULL
     this.first = this.first.next;
     this.length--;
     return this;
@@ -48,5 +50,6 @@ myQueue.enqueue('Pavel');
 myQueue.peek();
 myQueue.dequeue();
 myQueue.dequeue();
-myQueue.dequeue();
+// myQueue.dequeue();
 myQueue.peek();
+console.log(myQueue);
