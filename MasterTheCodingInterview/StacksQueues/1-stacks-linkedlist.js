@@ -22,8 +22,11 @@ class Stack {
       this.top = newNode;
       this.bottom = newNode;
     } else {
-      this.top.next = newNode;
+      // If the value to the top
+      // make direction to before level
+      const holdingPointer = this.top;
       this.top = newNode;
+      this.top.next = holdingPointer;
     }
     this.length++;
     return this;
@@ -33,9 +36,16 @@ class Stack {
     if (!this.top) {
       return null;
     }
+    // if (this.length === 1) {
+    //   this.top = null;
+    //   this.bottom = null;
+    // } else {
+    //   this.top = this.top.next;
+    // }
 
+    // If you on top: top.next == null
     if (this.top === this.bottom) {
-      return (this.bottom = null);
+      this.bottom = null;
     }
 
     this.top = this.top.next;
@@ -45,11 +55,24 @@ class Stack {
 }
 
 const myStack = new Stack();
-myStack.peek();
 myStack.push('google');
 myStack.push('udemy');
+// console.log(myStack.peek());
 myStack.push('discord');
-myStack.peek();
+myStack.push('test');
+myStack.push('test2');
+// console.log(myStack.peek());
 myStack.pop();
+console.log(myStack);
+
 myStack.pop();
+console.log(myStack);
+
 myStack.pop();
+console.log(myStack);
+
+myStack.pop();
+console.log(myStack);
+
+myStack.pop();
+console.log(myStack);
