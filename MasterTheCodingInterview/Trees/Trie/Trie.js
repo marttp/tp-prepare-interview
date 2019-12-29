@@ -6,10 +6,6 @@ class Trie {
   }
 
   insert(word) {
-    if (typeof word !== 'string') {
-      throw new Error('Not a string type');
-    }
-
     let index = 0;
     let pCrawl = this.root;
 
