@@ -1,4 +1,4 @@
-// /* Hash Table */
+/* Hash Table */
 
 class HashTable {
   constructor() {
