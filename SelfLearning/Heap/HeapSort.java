@@ -1,3 +1,5 @@
+package SelfLearning.Heap;
+
 // Java program for implementation of Heap Sort 
 public class HeapSort {
     public void sort(int arr[]) {

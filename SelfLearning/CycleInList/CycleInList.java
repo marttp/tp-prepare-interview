@@ -1,3 +1,5 @@
+package SelfLearning.CycleInList;
+
 // 1 First approach. You can use scan and mark
 
 public class CycleInList {

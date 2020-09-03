@@ -1,3 +1,5 @@
+package SelfLearning.OwnLinkedList;
+
 public class Node {
     int data;
     Node next;

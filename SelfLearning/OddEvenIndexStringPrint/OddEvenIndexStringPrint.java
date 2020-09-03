@@ -1,4 +1,5 @@
-import java.io.*;
+package SelfLearning.OddEvenIndexStringPrint;
+
 import java.util.*;
 
 public class OddEvenIndexStringPrint {

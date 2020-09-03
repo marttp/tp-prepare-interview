@@ -1,3 +1,5 @@
+package SelfLearning.OwnLinkedList;
+
 public class OwnLinkedList {
     Node head;
 
@@ -36,13 +38,13 @@ public class OwnLinkedList {
             current = current.next;
         }
     }
-}
 
-private class Node {
-    int data;
-    Node next;
-
-    public Node(int data) {
-        this.data = data;
+    private class Node {
+        int data;
+        Node next;
+    
+        public Node(int data) {
+            this.data = data;
+        }
     }
 }

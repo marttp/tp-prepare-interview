@@ -1,3 +1,5 @@
+package SelfLearning.StackNode;
+
 public class StackNode {
     private static class Node {
         private int data;

@@ -1,3 +1,7 @@
+package SelfLearning.IsThisBST;
+
+import java.util.Stack;
+
 public class IsThisBST {
     public boolean isValidBST(TreeNode root) {
         if (root == null || (root.left == null && root.right == null))
@@ -24,11 +28,11 @@ public class IsThisBST {
         return true;
     }
 
-    public boolean checkBSTIterative(TreeNode node) {
+    public boolean checkBSTIterative(TreeNode root) {
         Stack<TreeNode> stack = new Stack();
         double inorder = -Double.MAX_VALUE;
 
-        while (!stack.isEmpty() || node != null) {
+        while (!stack.isEmpty() || root != null) {
             // Move root next until leaf node and push to stack
             while (root != null) {
                 stack.push(root);
@@ -43,5 +47,14 @@ public class IsThisBST {
             root = root.right;
         }
         return true;
+    }
+
+    private static class TreeNode {
+        private int val;
+        private TreeNode left;
+        private TreeNode right;
+        private TreeNode(int data) {
+            this.val = data;
+        }
     }
 }

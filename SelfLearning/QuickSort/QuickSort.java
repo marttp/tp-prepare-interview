@@ -1,3 +1,5 @@
+package SelfLearning.QuickSort;
+
 public class QuickSort {
     public static void quicksort(int[] array) {
         quicksort(array, 0, array.length - 1);

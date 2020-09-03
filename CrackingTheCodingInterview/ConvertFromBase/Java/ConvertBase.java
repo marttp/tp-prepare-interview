@@ -1,4 +1,4 @@
-package Java;
+package CrackingTheCodingInterview.ConvertFromBase.Java;
 
 import java.util.Scanner;
 

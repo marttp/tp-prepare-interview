@@ -1,3 +1,5 @@
+package SelfLearning.Heap;
+
 // Java program for building Heap from Array 
 public class BuildingHeap {
 

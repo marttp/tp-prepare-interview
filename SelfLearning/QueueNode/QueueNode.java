@@ -1,3 +1,5 @@
+package SelfLearning.QueueNode;
+
 public class QueueNode {
     private static class Node {
         private int data;
